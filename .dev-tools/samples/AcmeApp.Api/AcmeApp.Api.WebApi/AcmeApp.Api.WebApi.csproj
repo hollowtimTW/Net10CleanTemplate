@@ -13,14 +13,14 @@
     <ProjectReference Include="..\AcmeApp.Api.Domain\AcmeApp.Api.Domain.csproj" />
     <ProjectReference Include="..\AcmeApp.Api.Application\AcmeApp.Api.Application.csproj" />
     <ProjectReference Include="..\AcmeApp.Api.Infrastructure\AcmeApp.Api.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.Domain\YourApp.Domain.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.Application\YourApp.Application.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.Infrastructure\YourApp.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.Shared.Hosting\YourApp.Shared.Hosting.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.Identity\YourApp.Identity.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.AuditLog\YourApp.AuditLog.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.Notification\YourApp.Notification.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.FileStorage\YourApp.FileStorage.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Domain\YourApp.Domain.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Application\YourApp.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Infrastructure\YourApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Shared.Hosting\YourApp.Shared.Hosting.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Identity\YourApp.Identity.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.AuditLog\YourApp.AuditLog.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Notification\YourApp.Notification.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.FileStorage\YourApp.FileStorage.csproj" />
   </ItemGroup>
 
 </Project>

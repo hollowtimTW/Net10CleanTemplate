@@ -16,8 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AcmeApp.Api.Domain\AcmeApp.Api.Domain.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.Domain\YourApp.Domain.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.Application\YourApp.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Domain\YourApp.Domain.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Application\YourApp.Application.csproj" />
   </ItemGroup>
 
 </Project>

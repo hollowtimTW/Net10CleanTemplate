@@ -18,9 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Content\YourApp.Domain\YourApp.Domain.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.Application\YourApp.Application.csproj" />
-    <ProjectReference Include="..\..\..\Content\YourApp.Infrastructure\YourApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Domain\YourApp.Domain.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Application\YourApp.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\Content\YourApp.Infrastructure\YourApp.Infrastructure.csproj" />
     <ProjectReference Include="..\AcmeApp.Api.Domain\AcmeApp.Api.Domain.csproj" />
     <ProjectReference Include="..\AcmeApp.Api.Application\AcmeApp.Api.Application.csproj" />
   </ItemGroup>
