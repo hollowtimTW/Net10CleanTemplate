@@ -1,0 +1,41 @@
+@page
+@model YourApp.Razor.Web.Pages.Customers.IndexModel
+@{
+    ViewData["Title"] = "Customers";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1><i class="fa-solid fa-users me-2"></i>Customers</h1>
+        <a asp-page="Create" class="btn btn-success">
+            <i class="fa-solid fa-plus me-1"></i>New Customer
+        </a>
+    </div>
+
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Created</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in Model.Customers)
+            {
+                <tr>
+                    <td>@c.Code</td>
+                    <td>@c.Name</td>
+                    <td>@c.Email</td>
+                    <td>@c.CreatedAt.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        <a asp-page="Edit" asp-route-id="@c.Id" class="btn btn-sm btn-primary">Edit</a>
+                        <a asp-page="Details" asp-route-id="@c.Id" class="btn btn-sm btn-info">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

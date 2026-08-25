@@ -1,0 +1,51 @@
+@page
+@model YourApp.Razor.Web.Pages.Dashboard.IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container py-4">
+    <h1><i class="fa-solid fa-chart-line me-2"></i>Dashboard</h1>
+    <p class="text-muted">Highcharts demo — replace with your own data.</p>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <div id="chart-revenue" style="height: 320px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <div id="chart-categories" style="height: 320px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script>
+        Highcharts.chart('chart-revenue', {
+            title: { text: 'Monthly Revenue' },
+            xAxis: { categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'] },
+            yAxis: { title: { text: 'TWD' } },
+            series: [{
+                name: 'Revenue',
+                data: @Html.Raw(Model.RevenueJson)
+            }]
+        });
+
+        Highcharts.chart('chart-categories', {
+            chart: { type: 'pie' },
+            title: { text: 'Product Categories' },
+            series: [{
+                name: 'Share',
+                data: @Html.Raw(Model.CategoriesJson)
+            }]
+        });
+    </script>
+}

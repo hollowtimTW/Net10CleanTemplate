@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Sample infrastructure — DbContext + EF Repository + Dapper Read Repository.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" />
+    <PackageReference Include="EFCore.NamingConventions" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <PackageReference Include="Dapper" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Content\YourApp.Domain\YourApp.Domain.csproj" />
+    <ProjectReference Include="..\..\..\Content\YourApp.Application\YourApp.Application.csproj" />
+    <ProjectReference Include="..\..\..\Content\YourApp.Infrastructure\YourApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\AcmeApp.Api.Domain\AcmeApp.Api.Domain.csproj" />
+    <ProjectReference Include="..\AcmeApp.Api.Application\AcmeApp.Api.Application.csproj" />
+  </ItemGroup>
+
+</Project>

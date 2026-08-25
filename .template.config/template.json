@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json.schemastore.org/template.json",
+  "author": "hollowtimTW (Tim @ EGit)",
+  "classifications": [
+    "Web",
+    "API",
+    "MVC",
+    "Razor",
+    "Solution",
+    "Architecture",
+    "Clean Architecture"
+  ],
+  "identity": "EGit.Net10CleanTemplate.CSharp",
+  "name": "EGit .NET 10 Clean Template",
+  "description": ".NET 10 LTS clean architecture template with EF Core 10 + Dapper dual-track, PostgreSQL by default (MSSQL swap-ready), Serilog, MediatR, FluentValidation, Highcharts-friendly APIs, optional Razor Pages / MVC / Web All frontends.",
+  "shortName": "net10-clean",
+  "tags": {
+    "language": "C#",
+    "target-framework": ".NET 10",
+    "type": "project",
+    "architecture": "clean",
+    "database": "postgresql,sqlserver",
+    "frontend": "none,mvc,razor,all"
+  },
+  "sourceName": "YourApp",
+  "preferNameDirectory": true,
+  "defaultName": "AcmeApp",
+  "guids": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "symbols": {
+    "frontend": {
+      "type": "parameter",
+      "description": "Which frontend flavor to scaffold.",
+      "datatype": "choice",
+      "choices": [
+        { "choice": "none", "description": "API only (no Web frontend)." },
+        { "choice": "mvc", "description": "Add ASP.NET Core MVC (Controllers + Views)." },
+        { "choice": "razor", "description": "Add Razor Pages (Pages + PageModels)." },
+        { "choice": "all", "description": "Include MVC + Razor Pages (largest)." }
+      ],
+      "defaultValue": "razor"
+    },
+    "database": {
+      "type": "parameter",
+      "description": "Primary database provider.",
+      "datatype": "choice",
+      "choices": [
+        { "choice": "postgresql", "description": "PostgreSQL 17 (recommended default)." },
+        { "choice": "sqlserver", "description": "SQL Server 2022." }
+      ],
+      "defaultValue": "postgresql"
+    },
+    "auth": {
+      "type": "parameter",
+      "description": "Authentication mode.",
+      "datatype": "choice",
+      "choices": [
+        { "choice": "cookie+jwt", "description": "Cookie auth for web + JWT for API." },
+        { "choice": "windows", "description": "Windows Authentication (Negotiate / AD)." },
+        { "choice": "all", "description": "All three (Cookie + JWT + Windows)." }
+      ],
+      "defaultValue": "cookie+jwt"
+    },
+    "includeIdentity": {
+      "type": "parameter",
+      "description": "Include the Identity module (auth/sso).",
+      "datatype": "bool",
+      "defaultValue": "true"
+    },
+    "includeAuditLog": {
+      "type": "parameter",
+      "description": "Include the AuditLog module (who/when/what tracking).",
+      "datatype": "bool",
+      "defaultValue": "true"
+    },
+    "includeNotification": {
+      "type": "parameter",
+      "description": "Include the Notification module (email/sms gateway).",
+      "datatype": "bool",
+      "defaultValue": "true"
+    },
+    "includeFileStorage": {
+      "type": "parameter",
+      "description": "Include the FileStorage module.",
+      "datatype": "bool",
+      "defaultValue": "true"
+    },
+    "useMediatR": {
+      "type": "parameter",
+      "description": "Use MediatR for CQRS dispatch (recommended).",
+      "datatype": "bool",
+      "defaultValue": "true"
+    },
+    "includeTests": {
+      "type": "parameter",
+      "description": "Generate unit + integration test projects.",
+      "datatype": "bool",
+      "defaultValue": "true"
+    }
+  }
+}

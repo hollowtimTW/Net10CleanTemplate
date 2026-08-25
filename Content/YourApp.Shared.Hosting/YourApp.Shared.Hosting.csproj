@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Shared hosting library — one-line Serilog + ProblemDetails + ExceptionHandler + HealthCheck + Swagger setup.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" />
+    <PackageReference Include="Serilog.Sinks.Console" />
+    <PackageReference Include="Serilog.Sinks.File" />
+    <PackageReference Include="Serilog.Settings.Configuration" />
+    <PackageReference Include="Serilog.Enrichers.Environment" />
+    <PackageReference Include="Serilog.Enrichers.Thread" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YourApp.Domain\YourApp.Domain.csproj" />
+    <ProjectReference Include="..\YourApp.Application\YourApp.Application.csproj" />
+    <ProjectReference Include="..\YourApp.Infrastructure\YourApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

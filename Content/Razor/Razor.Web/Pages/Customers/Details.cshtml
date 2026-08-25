@@ -1,0 +1,17 @@
+@page
+@model YourApp.Razor.Web.Pages.Customers.DetailsModel
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<div class="container py-4">
+    <h1>Customer Details</h1>
+    <dl class="row">
+        <dt class="col-sm-2">Code</dt><dd class="col-sm-10">@Model.Code</dd>
+        <dt class="col-sm-2">Name</dt><dd class="col-sm-10">@Model.Name</dd>
+        <dt class="col-sm-2">Email</dt><dd class="col-sm-10">@Model.Email</dd>
+        <dt class="col-sm-2">Created</dt><dd class="col-sm-10">@Model.CreatedAt.ToString("yyyy-MM-dd HH:mm")</dd>
+    </dl>
+    <a asp-page="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+    <a asp-page="Index" class="btn btn-secondary">Back</a>
+</div>

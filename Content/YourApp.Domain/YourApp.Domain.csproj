@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Domain layer — pure POCO aggregates, value objects, domain events. Zero external dependencies.</Description>
+  </PropertyGroup>
+
+  <!-- Intentionally NO PackageReferences: this project references only the BCL. -->
+
+</Project>

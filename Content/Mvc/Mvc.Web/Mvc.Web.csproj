@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Description>MVC frontend — Controllers + Views + ViewModels. Classic server-rendered HTML for back-office / CRUD apps.</Description>
+    <UserSecretsId>yourapp-mvc</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- FrameworkReference already provides Microsoft.AspNetCore.Authentication.Cookies + JwtBearer -->
+    <PackageReference Include="MediatR" />
+    <PackageReference Include="Riok.Mapperly" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\YourApp.Domain\YourApp.Domain.csproj" />
+    <ProjectReference Include="..\..\YourApp.Application\YourApp.Application.csproj" />
+    <ProjectReference Include="..\..\YourApp.Infrastructure\YourApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\YourApp.Shared.Hosting\YourApp.Shared.Hosting.csproj" />
+    <ProjectReference Include="..\..\YourApp.Identity\YourApp.Identity.csproj" />
+    <ProjectReference Include="..\..\YourApp.AuditLog\YourApp.AuditLog.csproj" />
+    <ProjectReference Include="..\..\YourApp.Notification\YourApp.Notification.csproj" />
+    <ProjectReference Include="..\..\YourApp.FileStorage\YourApp.FileStorage.csproj" />
+  </ItemGroup>
+
+</Project>

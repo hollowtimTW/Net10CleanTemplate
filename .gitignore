@@ -1,0 +1,56 @@
+## ignore standard build outputs
+bin/
+obj/
+out/
+artifacts/
+publish/
+
+## ignore test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+.cobertura.xml
+coverage.cobertura.xml
+coverage.opencover.xml
+
+## ignore IDE files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+
+## ignore tools and scratch
+tools/
+scratch/
+local.settings.json
+
+## ignore secrets (NEVER commit)
+appsettings.*.local.json
+appsettings.Development.local.json
+**/secrets.json
+.env
+.env.*
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+project.assets.json
+project.nuspec
+project.fragment.lock.json
+artifacts/
+
+## OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Logs
+*.log
+logs/
+
+# NOTE: .template.config/ is the template's OWN config — DO NOT ignore it.
+# Only the items inside a generated sample project are auto-excluded by the inner .gitignore.

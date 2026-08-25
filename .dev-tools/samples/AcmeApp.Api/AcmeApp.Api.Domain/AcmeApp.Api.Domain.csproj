@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Sample domain — Product catalog. Demonstrates the template works without any domain-specific code.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Content\YourApp.Domain\YourApp.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

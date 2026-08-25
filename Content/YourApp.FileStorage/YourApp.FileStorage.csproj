@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>FileStorage module — abstraction for local/NAS/S3/Blob storage with local-disk default implementation.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- FrameworkReference already provides Microsoft.Extensions.Hosting.Abstractions -->
+  </ItemGroup>
+
+</Project>

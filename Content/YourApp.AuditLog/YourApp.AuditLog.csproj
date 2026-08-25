@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>AuditLog module — in-process channel for audit events. Producers (Web/Worker) write; the writer drains to a sink (DB/file/Seq).</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- FrameworkReference already provides Microsoft.Extensions.Hosting.Abstractions -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YourApp.Application\YourApp.Application.csproj" />
+  </ItemGroup>
+
+</Project>

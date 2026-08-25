@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Identity module — user directory lookup, JWT signing/validation, claims shaping. Concrete implementations plug in (AD/LDAP/DB).</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Negotiate" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YourApp.Domain\YourApp.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

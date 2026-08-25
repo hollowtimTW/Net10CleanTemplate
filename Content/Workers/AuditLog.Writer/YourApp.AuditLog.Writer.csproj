@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <Description>Drains the audit channel and persists to a sink (DB/file/Seq). Standalone Windows Service / Docker container.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Serilog.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\YourApp.AuditLog\YourApp.AuditLog.csproj" />
+  </ItemGroup>
+
+</Project>

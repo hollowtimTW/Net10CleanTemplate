@@ -1,0 +1,22 @@
+@{
+    var isAuth = Context.User?.Identity?.IsAuthenticated ?? false;
+    var name = Context.User?.Identity?.Name;
+}
+
+<ul class="navbar-nav">
+@if (isAuth)
+{
+    <li class="nav-item">
+        <span class="nav-link text-light">Hello @(name ?? "User")!</span>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-light" asp-controller="Account" asp-action="Login">Switch user</a>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-light" asp-controller="Account" asp-action="Login">Login</a>
+    </li>
+}
+</ul>

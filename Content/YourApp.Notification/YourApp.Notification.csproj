@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Notification module — gateway interface for Email/SMS/Push. Channel-based decoupling; concrete adapters plug in (SMTP / Twilio / Firebase).</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- FrameworkReference already provides Microsoft.Extensions.Hosting.Abstractions -->
+  </ItemGroup>
+
+</Project>
