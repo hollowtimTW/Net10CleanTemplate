@@ -53,8 +53,17 @@ Connection string in `appsettings.Development.json`:
 ## Run tests
 
 ```bash
-dotnet test
+dotnet test                                              # All 30 tests (Unit + Integration)
+dotnet test Content/Tests/YourApp.UnitTests              # Unit only — no Docker needed
 ```
+
+**Unit tests (25):** Domain primitives (Result, ValueObject, StronglyTypedId, Guard, AggregateRoot) + sample Customer aggregate business logic.
+
+**Integration tests (5):**
+- 3 API smoke tests (`/`, `/api/health`, `/health/live`) — no Docker
+- 2 PostgreSQL tests — auto-skip if Docker is not available; set `YOURAPP_TESTS_REQUIRE_DOCKER=1` to fail-fast in CI
+
+Tests use **xUnit + AwesomeAssertions + Testcontainers.PostgreSql**.
 
 ## Run the API
 

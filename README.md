@@ -25,7 +25,7 @@ A reusable [`dotnet new`](https://learn.microsoft.com/dotnet/core/tools/dotnet-n
 | **Razor Pages host** | `YourApp.Razor.Web` | Pages + PageModels + Highcharts dashboard. |
 | **Workers** | `YourApp.AuditLog.Writer` / `YourApp.Notification.Dispatcher` | Standalone Worker SDK services. |
 
-**17 csproj, ~80 source files, 60+ NuGet packages pinned in CPM.**
+**19 csproj + sample (4 csproj), ~100 source files, 60+ NuGet packages pinned in CPM.**
 
 ---
 
