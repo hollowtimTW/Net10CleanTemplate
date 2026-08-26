@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Integration tests for YourApp.Infrastructure. Uses Testcontainers to spin up a real PostgreSQL 17 instance per test run.</Description>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <NoWarn>$(NoWarn);CA1711;CA1812;CA1716;CA1002</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="AwesomeAssertions" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" />
+    <PackageReference Include="Testcontainers" />
+    <PackageReference Include="Testcontainers.PostgreSql" />
+    <PackageReference Include="coverlet.collector">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\YourApp.Domain\YourApp.Domain.csproj" />
+    <ProjectReference Include="..\..\YourApp.Application\YourApp.Application.csproj" />
+    <ProjectReference Include="..\..\YourApp.Infrastructure\YourApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\YourApp.Identity\YourApp.Identity.csproj" />
+    <ProjectReference Include="..\..\YourApp.AuditLog\YourApp.AuditLog.csproj" />
+    <ProjectReference Include="..\..\YourApp.Notification\YourApp.Notification.csproj" />
+    <ProjectReference Include="..\..\YourApp.FileStorage\YourApp.FileStorage.csproj" />
+    <ProjectReference Include="..\..\Api\WebApi\YourApp.WebApi.csproj" />
+  </ItemGroup>
+
+</Project>
