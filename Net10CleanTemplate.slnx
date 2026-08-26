@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution>
+  <Folder Name="/.dev-tools/samples/AcmeApp.Api/AcmeApp.Api.Application/">
+    <Project Path=".dev-tools\samples\AcmeApp.Api\AcmeApp.Api.Application\AcmeApp.Api.Application.csproj" />
+  </Folder>
+  <Folder Name="/.dev-tools/samples/AcmeApp.Api/AcmeApp.Api.Domain/">
+    <Project Path=".dev-tools\samples\AcmeApp.Api\AcmeApp.Api.Domain\AcmeApp.Api.Domain.csproj" />
+  </Folder>
+  <Folder Name="/.dev-tools/samples/AcmeApp.Api/AcmeApp.Api.Infrastructure/">
+    <Project Path=".dev-tools\samples\AcmeApp.Api\AcmeApp.Api.Infrastructure\AcmeApp.Api.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/.dev-tools/samples/AcmeApp.Api/AcmeApp.Api.WebApi/">
+    <Project Path=".dev-tools\samples\AcmeApp.Api\AcmeApp.Api.WebApi\AcmeApp.Api.WebApi.csproj" />
+  </Folder>
+  <Folder Name="/Content/Api/WebApi/">
+    <Project Path="Content\Api\WebApi\YourApp.WebApi.csproj" />
+  </Folder>
+  <Folder Name="/Content/Mvc/Mvc.Web/">
+    <Project Path="Content\Mvc\Mvc.Web\Mvc.Web.csproj" />
+  </Folder>
+  <Folder Name="/Content/Razor/Razor.Web/">
+    <Project Path="Content\Razor\Razor.Web\Razor.Web.csproj" />
+  </Folder>
+  <Folder Name="/Content/Tests/YourApp.IntegrationTests/">
+    <Project Path="Content\Tests\YourApp.IntegrationTests\YourApp.IntegrationTests.csproj" />
+  </Folder>
+  <Folder Name="/Content/Tests/YourApp.UnitTests/">
+    <Project Path="Content\Tests\YourApp.UnitTests\YourApp.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/Content/Workers/AuditLog.Writer/">
+    <Project Path="Content\Workers\AuditLog.Writer\YourApp.AuditLog.Writer.csproj" />
+  </Folder>
+  <Folder Name="/Content/Workers/Notification.Dispatcher/">
+    <Project Path="Content\Workers\Notification.Dispatcher\YourApp.Notification.Dispatcher.csproj" />
+  </Folder>
+  <Folder Name="/Content/YourApp.Application/">
+    <Project Path="Content\YourApp.Application\YourApp.Application.csproj" />
+  </Folder>
+  <Folder Name="/Content/YourApp.AuditLog/">
+    <Project Path="Content\YourApp.AuditLog\YourApp.AuditLog.csproj" />
+  </Folder>
+  <Folder Name="/Content/YourApp.Domain/">
+    <Project Path="Content\YourApp.Domain\YourApp.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Content/YourApp.FileStorage/">
+    <Project Path="Content\YourApp.FileStorage\YourApp.FileStorage.csproj" />
+  </Folder>
+  <Folder Name="/Content/YourApp.Identity/">
+    <Project Path="Content\YourApp.Identity\YourApp.Identity.csproj" />
+  </Folder>
+  <Folder Name="/Content/YourApp.Infrastructure/">
+    <Project Path="Content\YourApp.Infrastructure\YourApp.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Content/YourApp.Notification/">
+    <Project Path="Content\YourApp.Notification\YourApp.Notification.csproj" />
+  </Folder>
+  <Folder Name="/Content/YourApp.Shared.Hosting/">
+    <Project Path="Content\YourApp.Shared.Hosting\YourApp.Shared.Hosting.csproj" />
+  </Folder>
+</Solution>

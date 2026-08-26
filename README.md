@@ -25,7 +25,7 @@ A reusable [`dotnet new`](https://learn.microsoft.com/dotnet/core/tools/dotnet-n
 | **Razor Pages host** | `YourApp.Razor.Web` | Pages + PageModels + Highcharts dashboard. |
 | **Workers** | `YourApp.AuditLog.Writer` / `YourApp.Notification.Dispatcher` | Standalone Worker SDK services. |
 
-**19 csproj + sample (4 csproj), ~100 source files, 60+ NuGet packages pinned in CPM.**
+**19 csproj + sample (4 csproj) — all wired into `Net10CleanTemplate.slnx`. ~100 source files, 60+ NuGet packages pinned in CPM.**
 
 ---
 
@@ -46,10 +46,12 @@ dotnet new net10-clean --name MyCompany.Hospital --output ~/work/MyCompany.Hospi
 ### Build + run
 ```bash
 cd ~/work/MyCompany.Hospital
-dotnet build                           # 0 warnings, 0 errors
+dotnet build                                           # 0 warnings, 0 errors (whole slnx)
 dotnet run --project Content/Api/WebApi
 # → https://localhost:5001/swagger
 ```
+
+Or open `Net10CleanTemplate.slnx` in Visual Studio / Rider — all 19 projects appear in the Solution Explorer under folders (Content/, Tests/, Workers/, etc.).
 
 ---
 
@@ -161,6 +163,7 @@ When swapping to MSSQL, swap `UseNpgsql` → `UseSqlServer` and remove `Npgsql`-
 ```
 Net10CleanTemplate/
 ├── .template.config/template.json    ← dotnet new metadata
+├── Net10CleanTemplate.slnx            ← Visual Studio / Rider solution file
 ├── Content/                          ← what gets scaffolded into your new project
 │   ├── YourApp.Domain/
 │   ├── YourApp.Application/
